@@ -1,0 +1,104 @@
+/* Container for entire wishlist section */
+.wishlist-container {
+    padding: 20px;
+}
+
+/* Container for the header with image and title */
+.wishlist-header {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    width: 100%;
+    margin-bottom: 50px; /* Ensure the container takes the full width */
+}
+
+/* Style for the logo */
+.wishlist-logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the logo and heading */
+}
+
+/* Style for the heading */
+.wishlist-header h1 {
+    font-family: "Cantarell"; /* Modern, clean font */
+    font-size :80px; /* Increase font size */
+    color: #ead7c6; /* Desired color for the heading */
+    margin: 0;
+    width:80%; /* Remove default margin for better alignment */
+}
+
+/* Style the label for Sorter and Filter */
+/* Container for sort and filter */
+.sort-filter-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if necessary */
+    gap: 20px; /* Space between sort and filter containers */
+    margin-bottom: 30px; /* Space between sort/filter and wishlist grid */
+}
+
+/* Style the label for Sorter and Filter */
+.sort-filter-container label {
+    font-size: 1.1rem;
+    color: #ead7c6; /* Color for the labels */
+    margin-right: 10px; /* Space between the label and the dropdown */
+}
+
+/* Style the select dropdowns */
+.sort-filter-container select {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 12px; /* Increase padding for a larger dropdown */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333333; /* Text color in the dropdown */
+    background-color: #f9f9f9; /* Background color for the dropdown */
+    margin-right: 20px; /* Space between dropdowns */
+}
+
+/* Optional: Add hover effect for dropdown */
+.sort-filter-container select:hover {
+    border-color: #888888; /* Slightly darker border on hover */
+}
+/* Container for individual sort and filter items */
+.sort-container, .filter-container {
+    display: flex;
+    align-items: center; /* Vertically center label and dropdown */
+}
+
+/* Additional spacing between sort and filter containers */
+.sort-container {
+    margin-right: 475px; /* Space between sort and filter containers */
+}
+
+
+/* Grid layout for wishlist items */
+.wishlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between items */
+    justify-content: space-evenly; /* Distributes items evenly */
+}
+
+/* Style for wishlist items */
+.wishlist-item {
+    background: #a5a29d; /* Background color for the item */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px; /* Flexible width with a minimum base width */
+    max-width: 400px; /* Maximum width to prevent overly large items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for product images */
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for item type text */
+.item-type {
+    font-size: 0.9rem;
+    color: #ecf0fe; /* Color for item type */
+    margin-bottom: 10px;
+}
